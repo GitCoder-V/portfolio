@@ -1,0 +1,168 @@
+.case-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Делаем карточку-ссылку блочным элементом */
+.case-card--link {
+  display: block;
+  height: 100%;
+}
+
+/* Убираем стандартные стили ссылки */
+.case-card--link,
+.case-card--link:hover,
+.case-card--link:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Улучшаем доступность: фокус для клавиатуры */
+.case-card--link:focus {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-md);
+}
+
+.case-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.case-card__content {
+  padding: 0;
+  flex-grow: 1;
+  position: relative;
+}
+
+.case-card__image-container {
+  width: 100%;
+  height: 280px;
+  background-color: #e9ecef;
+  background-image: url('../../img/common/просто\ фон.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  padding: 25px; /* Отступ для текста от краев */
+}
+
+/* Модификаторы для кейса */
+.case-card--electrictool-cf .case-card__image-container {
+    background-image: url('../../img/cards/img-electrictool-cf/1.png');
+}
+
+.case-card--electrictool-pf .case-card__image-container {
+    background-image: url('../../img/cards/img-electrictool-pf/2.webp');
+}
+
+.case-card--svetenergo .case-card__image-container {
+    background-image: url('../../img/cards/img-svetenergo-category/3.jpg');
+}
+
+.case-card--globus .case-card__image-container {
+    background-image: url('../../img/cards/img-globus/ab9846.jpg');
+}
+
+.case-card--street-beat .case-card__image-container {
+    background-image: url('../../img/cards/img-street-beat/5.jpg');
+}
+
+.case-card--idearemonta24 .case-card__image-container {
+    background-image: url('../../img/cards/img-idearemonta24/6.jpg');
+}
+
+.case-card--electrictool-link-strategy .case-card__image-container {
+    background-image: url('../../img/cards/img-electrictool-link-strategy/7.png');
+}
+
+.case-card--m-perm .case-card__image-container {
+    background-image: url('../../img/cards/img-m-perm/8.png');
+}
+
+.case-card--sancors .case-card__image-container {
+    background-image: url('../../img/cards/img-sancors-toilets/9.png');
+}
+
+.case-card--idearemonta-structure .case-card__image-container {
+    background-image: url('../../img/cards/img-idearemonta-structure/10.jpg');
+}
+
+.case-card--imperia .case-card__image-container {
+    background-image: url('../../img/cards/img-imperia-doors/11.jpg');
+}
+
+.case-card--dentalux .case-card__image-container {
+    background-image: url('../../img/cards/img-dentalux/12.png');
+}
+
+.case-card--mebelmir54 .case-card__image-container {
+    background-image: url('../../img/cards/img-mebelmir54/13.jpg');
+}
+
+.case-card--moxsmartdisplay .case-card__image-container {
+    background-image: url('../../img/cards/img-moxsmartdisplay-tilda/14.webp');
+}
+
+.case-card--ivestore .case-card__image-container {
+    background-image: url('../../img/cards/img-ivestore/15.jpg');
+}
+
+.case-card--ecotovary .case-card__image-container {
+    background-image: url('../../img/cards/img-ecotovary/16.jpg');
+}
+
+.case-card--avtoall-forecast .case-card__image-container {
+    background-image: url('../../img/cards/img-avtoall-forecast/a64ae603-9f69-460f-89ae-7166060ac5bc_462560af-0064-4820-8fca-4dbb75248bff.png');
+}
+
+/* Кейс: Разработка семантического ядра для Avtoall.ru */
+.case-card--avtoall-semantics .case-card__image-container {
+    background-image: url('../../img/cards/img-avtoall-semantics/18.jpg');
+}
+
+.case-card__text-overlay {
+  position: relative;
+  z-index: 2;
+  color: #222;
+}
+
+.case-card__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.case-card__domain {
+  font-size: 1rem;
+  color: #2a6df5;
+  font-weight: 500;
+}
+
+.case-card__footer {
+  padding: 20px 25px;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+}
+
+.case-card__date {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: lowercase;
+  margin-bottom: 5px;
+}
+
+.case-card__description {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
+}

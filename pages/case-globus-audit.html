@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru" itemscope itemtype="https://schema.org/Article">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../..//img/common/favicon.png">
+    <title>Кейс: Технический аудит SEO сайта globus.ru | SEO полигон</title>
+    <meta name="description" content="Анализ критической ошибки индексации: полная блокировка каталога в robots.txt. Как найти и исправить проблему отсутствия органического трафика.">
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Микроразметка для статьи -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Кейс: Технический аудит SEO сайта globus.ru",
+        "description": "Выявление критической ошибки индексации: полная блокировка каталога в robots.txt. Анализ последствий и рекомендации по исправлению.",
+        "image": "../img/case-globus-audit/robots-preview.jpg",
+        "datePublished": "2024-02-01",
+        "dateModified": "2024-02-01",
+        "author": {
+            "@type": "Person",
+            "name": "Аналитик SEO полигона"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SEO полигон",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "../img/common/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://seopoligon.ru/cases/globus-technical-audit"
+        }
+    }
+    </script>
+    
+    <!-- Микроразметка для хлебных крошек -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Главная",
+                "item": "https://seopoligon.ru/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Кейсы",
+                "item": "https://seopoligon.ru/#cases"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Технический аудит globus.ru",
+                "item": "https://seopoligon.ru/cases/globus-technical-audit"
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="page">
+    <!-- Мобильный бургер (выезжающий слева) - ВНЕ header -->
+<div class="mobile-burger" id="mobileBurger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<header class="header smart-header">
+  <div class="container header__container">
+    <a class="logo" href="../index.html">VKobtsev SEO</a>
+    <nav class="nav">
+      <!-- Десктопное меню -->
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="../index.html">Кейсы</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="blog/blog.html">Блог</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="about/about.html">Обо мне</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="contacts/contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Затемнение и мобильное меню -->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="home/home.html">Главная</a></li>
+            <li><a href="uslugi/uslugi.html">Услуги</a></li>
+            <li><a href="../index.html">Кейсы</a></li>
+            <li><a href="blog/blog.html">Блог</a></li>
+            <li><a href="otzyvy/otzyvy.html">Отзывы</a></li>
+            <li><a href="about/about.html">Обо мне</a></li>
+            <li><a href="contacts/contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <main class="main">
+        <div class="container">
+            <!-- Хлебные крошки -->
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                <ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a class="breadcrumbs__link" href="../index.html" itemprop="item">
+                            <span itemprop="name">Главная</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                        <span class="breadcrumbs__separator">›</span>
+                    </li>
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a class="breadcrumbs__link" href="../index.html#cases" itemprop="item">
+                            <span itemprop="name">Кейсы</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                        <span class="breadcrumbs__separator">›</span>
+                    </li>
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <span class="breadcrumbs__link breadcrumbs__link--current" itemprop="item">
+                            <span itemprop="name">Технический аудит globus.ru</span>
+                        </span>
+                        <meta itemprop="position" content="3">
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Контейнер статьи -->
+            <article class="article-content" itemprop="articleBody">
+                <header class="article-content__header">
+                    <h1 class="article-content__title" itemprop="headline">
+                        Технический аудит SEO сайта globus.ru
+                    </h1>
+                    <div class="article-meta">
+                        <time datetime="2024-02-01" itemprop="datePublished">1 февраля 2024</time>
+                    </div>
+                </header>
+
+                <!-- Контентная часть (только текст) -->
+                <div class="article-content__body">
+                    <!-- Введение -->
+                    <p>В работу поступил интернет-магазин продуктов питания и товаров для дома — <a href="https://www.globus.ru/" target="_blank" rel="noopener">globus.ru</a>. Заказчик жалуется на полное отсутствие органического трафика на страницы каталога и товаров, несмотря на наличие широкого ассортимента.</p>
+                    
+                    <p><strong>Задача:</strong><br>
+                    Провести технический аудит и выявить причину отсутствия страниц каталога в поисковой выдаче. Необходимо найти критическую ошибку, блокирующую индексацию коммерческого контента.</p>
+                    
+                    <p><strong>Результат анализа:</strong><br>
+                    В ходе аудита выявлена критическая техническая ошибка: весь каталог интернет-магазина намеренно и полностью закрыт от индексации поисковыми системами.</p>
+
+                    <!-- Блок 1: Основная проблема -->
+                    <h2>Основная проблема</h2>
+                    <p><strong>Полная блокировка индексации основного коммерческого контента сайта (каталога товаров) на уровне файла robots.txt.</strong></p>
+
+                    <!-- Блок 2: Состояние страницы -->
+                    <h2>Состояние страницы</h2>
+                    
+                    <h3>На уровне robots.txt:</h3>
+                    <p>Директива <code>Disallow: /catalog/</code> категорически запрещает всем поисковым роботам доступ к папке <code>/catalog/</code> и всем её подразделам. Это означает, что роботы Google и Яндекс физически не могут загрузить и проанализировать ни страницы категорий (например, <code>/catalog/bakaleya/krupy-bobovye/ris/</code>), ни карточки товаров (например, <code>/products/22098_ST/</code>).</p>
+                    
+                    <pre class="code-snippet">
+<code># Содержимое файла robots.txt
+User-agent: *
+Disallow: /catalog/</code>
+                    </pre>
+
+                    <h3>На уровне HTML:</h3>
+                    <p>Даже если бы доступ был открыт, на каждой странице присутствует мета-тег <code>&lt;meta name="robots" content="noindex, nofollow"/&gt;</code>, который даёт роботу команду не добавлять страницу в индекс. Однако эта директива не имеет значения, так как робот до неё не доходит из-за запрета в robots.txt.</p>
+                    
+                    <pre class="code-snippet">
+<code>&lt;!-- Мета-тег на страницах каталога --&gt;
+&lt;meta name="robots" content="noindex, nofollow" /&gt;</code>
+                    </pre>
+
+                    <p><strong>Вывод:</strong> Весь каталог сайта является "слепой зоной" для поисковых систем. Он не индексируется, не ранжируется и не отображается в результатах поиска по каким-либо запросам.</p>
+
+                    <!-- Блок 3: Почему это проблема влияет на трафик -->
+                    <h2>Почему это проблема влияет на трафик каталога</h2>
+                    
+                    <p>Запрет в robots.txt создаёт непреодолимый барьер между контентом каталога и поисковыми системами. В результате мы получаем:</p>
+                    
+                    <p><strong>1. Страницы исключены из индекса.</strong> Поскольку роботы не могут сканировать раздел <code>/catalog/</code>, страницы категорий и товаров отсутствуют в базах данных Google и Яндекс. Это делает их появление в результатах поиска технически невозможным, даже по самым точным низкочастотным запросам.</p>
+                    
+                    <p><strong>2. Остановлен процесс краулинга.</strong> Робот не может переходить по внутренним ссылкам внутри каталога. Это блокирует обнаружение нового контента и правильное распределение ссылочного веса между страницами, лишая их потенциала для ранжирования.</p>
+                    
+                    <p><strong>3. Невозможность компенсации.</strong> Любые инвестиции в контент, юзабилити или маркетинг не могут компенсировать эту ошибку, которая полностью отсекает основной источник целевого трафика — органический поиск.</p>
+
+                    <!-- Блок 4: Как исправить -->
+                    <h2>Как исправить</h2>
+                    
+                    <p><strong>1. Удалить строку <code>Disallow: /catalog/</code> из файла robots.txt</strong> для всех User-agent (особенно для * и Yandex). Это откроет доступ поисковым роботам к разделу.</p>
+                    
+                    <pre class="code-snippet">
+<code># Исправленный файл robots.txt
+User-agent: *
+Allow: /catalog/</code>
+                    </pre>
+                    
+                    <p><strong>2. После открытия доступа необходимо глобально удалить или изменить мета-тег noindex, nofollow</strong> на страницах каталога и товаров. Его нужно заменить на <code>index, follow</code> или убрать вовсе.</p>
+                    
+                    <pre class="code-snippet">
+<code>&lt;!-- Исправленный мета-тег --&gt;
+&lt;meta name="robots" content="index, follow" /&gt;</code>
+                    </pre>
+
+                    <!-- Блок 5: Заключение -->
+                    <h2>Краткое заключение</h2>
+                    
+                    <p>Проведённый аудит выявил критическую техническую ошибку: весь каталог интернет-магазина Globus намеренно и полностью закрыт от индексации поисковыми системами. Это объясняет полное отсутствие органического трафика, несмотря на наличие ассортимента.</p>
+                    
+                    <p>Исправление заключается в последовательном снятии двухуровневой блокировки (сначала в robots.txt, затем в HTML-коде) и последующей технической настройке для корректного отображения страниц в поиске. После этих действий сайт получит принципиальную возможность ранжироваться и привлекать трафик из органического поиска.</p>
+
+                    <!-- Ожидаемые результаты -->
+                    <h2>Ожидаемые результаты после исправления</h2>
+                    <ul>
+                        <li><strong>📈 Появление страниц в индексе:</strong> все страницы каталога и товаров начнут попадать в поиск</li>
+                        <li><strong>🔍 Рост органического трафика:</strong> от 0 до нескольких тысяч посетителей в месяц</li>
+                        <li><strong>📊 Улучшение видимости:</strong> по низкочастотным запросам (названия товаров, категорий)</li>
+                        <li><strong>⚡ Возврат инвестиций:</strong> контент и маркетинг начнут работать на SEO</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="home/home.html">Главная</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="about/about.html">Обо мне</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="uslugi/uslugi.html">Услуги</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="../index.html">Кейсы</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="blog/blog.html">Блог</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="contacts/contacts.html">Контакты</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="otzyvy/otzyvy.html">Отзывы</a></li>
+                </ul>
+            </nav>
+            <div class="footer__copyright">
+                &copy; <span id="current-year">2024</span> VKobtsev SEO
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

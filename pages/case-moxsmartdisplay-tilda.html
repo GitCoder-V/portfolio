@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru" itemscope itemtype="https://schema.org/Article">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../..//img/common/favicon.png">
+    <title>Технический аудит сайта на Tilda — moxsmartdisplay.tilda.ws | SEO полигон</title>
+    <meta name="description" content="Проверка редиректов, обработки WWW, слешей, чувствительности к регистру и критическая проблема с индексацией при отключенном JavaScript.">
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Микроразметка для статьи -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Кейс: Технический аудит сайта на Tilda — moxsmartdisplay.tilda.ws",
+        "description": "Проверка редиректов, обработки WWW, слешей, чувствительности к регистру и критическая проблема с индексацией при отключенном JavaScript.",
+        "image": "../img/case-moxsmartdisplay/preview.jpg",
+        "datePublished": "2024-03-15",
+        "dateModified": "2024-03-15",
+        "author": {
+            "@type": "Person",
+            "name": "Технический аудитор SEO полигона"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SEO полигон",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "../img/common/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://seopoligon.ru/cases/moxsmartdisplay-tilda-audit"
+        }
+    }
+    </script>
+    
+    <!-- Микроразметка для хлебных крошек -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Главная",
+                "item": "https://seopoligon.ru/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Кейсы",
+                "item": "https://seopoligon.ru/#cases"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Аудит Tilda",
+                "item": "https://seopoligon.ru/cases/moxsmartdisplay-tilda-audit"
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="page">
+    <!-- Мобильный бургер (выезжающий слева) - ВНЕ header -->
+<div class="mobile-burger" id="mobileBurger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<header class="header smart-header">
+  <div class="container header__container">
+    <a class="logo" href="../index.html">VKobtsev SEO</a>
+    <nav class="nav">
+      <!-- Десктопное меню -->
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="../index.html">Кейсы</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="blog/blog.html">Блог</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="about/about.html">Обо мне</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="contacts/contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Затемнение и мобильное меню -->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="home/home.html">Главная</a></li>
+            <li><a href="uslugi/uslugi.html">Услуги</a></li>
+            <li><a href="../index.html">Кейсы</a></li>
+            <li><a href="blog/blog.html">Блог</a></li>
+            <li><a href="otzyvy/otzyvy.html">Отзывы</a></li>
+            <li><a href="about/about.html">Обо мне</a></li>
+            <li><a href="contacts/contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <main class="main">
+        <div class="container">
+            <!-- Хлебные крошки -->
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                <ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a class="breadcrumbs__link" href="../index.html" itemprop="item">
+                            <span itemprop="name">Главная</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                        <span class="breadcrumbs__separator">›</span>
+                    </li>
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a class="breadcrumbs__link" href="../index.html#cases" itemprop="item">
+                            <span itemprop="name">Кейсы</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                        <span class="breadcrumbs__separator">›</span>
+                    </li>
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <span class="breadcrumbs__link breadcrumbs__link--current" itemprop="item">
+                            <span itemprop="name">Аудит Tilda</span>
+                        </span>
+                        <meta itemprop="position" content="3">
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Контейнер статьи -->
+            <article class="article-content" itemprop="articleBody">
+                <header class="article-content__header">
+                    <h1 class="article-content__title" itemprop="headline">
+                        Технический аудит сайта — moxsmartdisplay.tilda.ws
+                    </h1>
+                    <div class="article-meta">
+                        <time datetime="2024-03-15" itemprop="datePublished">15 марта 2025</time>
+                    </div>
+                </header>
+
+                <!-- Контентная часть -->
+                <div class="article-content__body">
+                    <!-- Введение -->
+                    <h2>Введение</h2>
+                    <p>Поступил сайт для базового технического аудита: <a href="https://moxsmartdisplay.tilda.ws/" target="_blank" rel="noopener">https://moxsmartdisplay.tilda.ws/</a></p>
+                    
+                    <p><strong>Задача:</strong> Проверить на ошибки и указать проблемные точки.</p>
+
+                    <h2>Технический аудит сайта: moxsmartdisplay.tilda.ws</h2>
+
+                    <p>В ходе аудита были проведены следующие проверки:</p>
+                    <ul>
+                        <li>Проверка редиректа с HTTP на HTTPS</li>
+                        <li>Проверка отображения контента при отключенном CSS</li>
+                        <li>Тестирование чувствительности к регистру в URL</li>
+                        <li>Проверка обработки WWW-версии домена</li>
+                        <li>Проверка поведения со слешами</li>
+                        <li>Тестирование доступности контента при отключенном JavaScript</li>
+                    </ul>
+
+                    <h3>1. HTTP → HTTPS редирект</h3>
+                    <ul>
+                        <li>Редирект работает корректно на всех страницах</li>
+                        <li>Код ответа: 301 Moved Permanently</li>
+                        <li>Безопасное соединение настроено правильно</li>
+                    </ul>
+                    <p><strong>Оценка:</strong> ✅ Хорошо</p>
+
+                    <h3>2. Отображение без CSS</h3>
+                    <ul>
+                        <li>Контент остается доступным и читаемым</li>
+                        <li>Текстовая информация сохраняется</li>
+                        <li>Навигация функционирует</li>
+                        <li>Поисковые роботы видят весь текстовый контент</li>
+                    </ul>
+                    <p><strong>Оценка:</strong> ✅ Хорошо</p>
+
+                    <h3>3. Чувствительность к регистру в URL</h3>
+                    <ul>
+                        <li>При добавлении заглавных букв в URL происходит некорректный редирект</li>
+                        <li><strong>Пример:</strong> <code>https://moxsmartdisplay.tilda.ws</code> → <code>https://moxsmartdisplay.tilda.ws/indoordisplay?tfc_storepartuid[...]</code></li>
+                        <li>Создание дублей страниц, потеря SEO-веса, непредсказуемое поведение</li>
+                    </ul>
+                    <p><strong>Оценка:</strong> ❌ Критическая ошибка</p>
+
+                    <h3>4. Разделение WWW и non-WWW версий</h3>
+                    <ul>
+                        <li><code>www.moxsmartdisplay.tilda.ws</code> открывается без редиректа на каноническую версию</li>
+                        <li>Распределение поведенческих факторов и SEO-веса между двумя версиями сайта</li>
+                    </ul>
+                    <p><strong>Оценка:</strong> ❌ Ошибка</p>
+
+                    <h3>5. Согласованность слешей в URL</h3>
+                    <ul>
+                        <li>Неодинаковое поведение со слешами на разных страницах</li>
+                        <li>Создание дополнительных дублей контента (версии со слешем и без)</li>
+                    </ul>
+                    <p><strong>Оценка:</strong> ❌ Ошибка</p>
+
+                    <h3>6. Зависимость от JavaScript</h3>
+                    <ul>
+                        <li>При отключении JS весь контент страниц пропадает</li>
+                        <li>Остается пустая белая страница без текста и навигации</li>
+                        <li>Сайт не индексируется поисковыми системами</li>
+                        <li>Недоступен для пользователей с отключенным JS</li>
+                    </ul>
+                    <p><strong>Оценка:</strong> ❌ Критическая ошибка</p>
+
+                    <h2>Общие выводы</h2>
+                    
+                    <p>Несмотря на корректную работу HTTPS и хорошую доступность контента при отключенном CSS, сайт имеет несколько критических проблем:</p>
+                    
+                    <ol>
+                        <li><strong>Чувствительность к регистру</strong> — создает дубли страниц</li>
+                        <li><strong>Отсутствие редиректа с WWW</strong> — распыление SEO-веса</li>
+                        <li><strong>Несогласованность слешей</strong> — дополнительные дубли</li>
+                        <li><strong>Полная зависимость от JavaScript</strong> — сайт не индексируется поисковиками</li>
+                    </ol>
+                    
+                    <p>Особенно критична проблема с JavaScript: сайты на Tilda, построенные на визуальном редакторе, часто имеют эту проблему. Для решения необходимо настроить серверный рендеринг или использовать альтернативные платформы, если SEO является приоритетом.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="home/home.html">Главная</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="about/about.html">Обо мне</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="uslugi/uslugi.html">Услуги</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="../index.html">Кейсы</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="blog/blog.html">Блог</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="contacts/contacts.html">Контакты</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="otzyvy/otzyvy.html">Отзывы</a></li>
+                </ul>
+            </nav>
+            <div class="footer__copyright">
+                &copy; <span id="current-year">2024</span> VKobtsev SEO
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

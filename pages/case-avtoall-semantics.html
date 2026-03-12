@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru" itemscope itemtype="https://schema.org/Article">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../..//img/common/favicon.png">
+    <title>Разработка семантического ядра для Avtoall.ru | SEO полигон</title>
+    <meta name="description" content="Сбор и кластеризация поисковых запросов для интернет-магазина автозапчастей. Анализ конкурентов, поиск нишевых возможностей и прогноз трафика.">
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Микроразметка для статьи -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Кейс: Разработка семантического ядра для интернет-магазина автозапчастей Avtoall.ru",
+        "description": "Сбор и кластеризация поисковых запросов для интернет-магазина автозапчастей. Анализ конкурентов, поиск нишевых возможностей и прогноз трафика.",
+        "image": "../img/case-avtoall-semantics/preview.jpg",
+        "datePublished": "2024-04-01",
+        "dateModified": "2024-04-01",
+        "author": {
+            "@type": "Person",
+            "name": "SEO-аналитик"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SEO полигон",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "../img/common/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://seopoligon.ru/cases/avtoall-semantics"
+        }
+    }
+    </script>
+    
+    <!-- Микроразметка для хлебных крошек -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Главная",
+                "item": "https://seopoligon.ru/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Кейсы",
+                "item": "https://seopoligon.ru/#cases"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Семантика Avtoall.ru",
+                "item": "https://seopoligon.ru/cases/avtoall-semantics"
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="page">
+    <!-- Мобильный бургер (выезжающий слева) - ВНЕ header -->
+<div class="mobile-burger" id="mobileBurger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<header class="header smart-header">
+  <div class="container header__container">
+    <a class="logo" href="../index.html">VKobtsev SEO</a>
+    <nav class="nav">
+      <!-- Десктопное меню -->
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a  href="../index.html">Кейсы</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="blog/blog.html">Блог</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="about/about.html">Обо мне</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="contacts/contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Затемнение и мобильное меню -->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="home/home.html">Главная</a></li>
+            <li><a href="uslugi/uslugi.html">Услуги</a></li>
+            <li><a href="../index.html">Кейсы</a></li>
+            <li><a href="blog/blog.html">Блог</a></li>
+            <li><a href="otzyvy/otzyvy.html">Отзывы</a></li>
+            <li><a href="about/about.html">Обо мне</a></li>
+            <li><a href="contacts/contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <main class="main">
+        <div class="container">
+            <!-- Хлебные крошки -->
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                <ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a class="breadcrumbs__link" href="../index.html" itemprop="item">
+                            <span itemprop="name">Главная</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                        <span class="breadcrumbs__separator">›</span>
+                    </li>
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a class="breadcrumbs__link" href="../index.html#cases" itemprop="item">
+                            <span itemprop="name">Кейсы</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                        <span class="breadcrumbs__separator">›</span>
+                    </li>
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <span class="breadcrumbs__link breadcrumbs__link--current" itemprop="item">
+                            <span itemprop="name">Семантика Avtoall.ru</span>
+                        </span>
+                        <meta itemprop="position" content="3">
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Контейнер статьи -->
+            <article class="article-content" itemprop="articleBody">
+                <header class="article-content__header">
+                    <h1 class="article-content__title" itemprop="headline">
+                        Разработка семантического ядра для интернет-магазина автозапчастей Avtoall.ru
+                    </h1>
+                    <div class="article-meta">
+                        <time datetime="2024-04-01" itemprop="datePublished">3 сентября 2025</time>
+                    </div>
+                </header>
+
+                <!-- Контентная часть -->
+                <div class="article-content__body">
+                    <p><strong>Задача:</strong> Собрать, структурировать и проанализировать поисковые запросы для дальнейшего построения структуры сайта, контент-плана и стратегии продвижения в высококонкурентной нише.</p>
+                    
+                    <p><strong>Инструмент:</strong> Маркерные запросы из анализа конкурентов, сбор ключевых слов в Яндекс Wordstat, определение частотности и кластеризация в Rush-Analytics.</p>
+
+                    <h2>1. Исходные данные и конкуренты</h2>
+                    <p>Прежде чем углубляться в слова, важно понять, с кем нам предстоит конкурировать. На этапе сбора семантики мы уже получили данные о видимости основных игроков рынка.</p>
+
+                    <!-- СКРИНШОТ 1 -->
+                    <figure class="article-image">
+                        <img class="article-image__img" src="../img/cases/case-avtoall-semantics/1-competitors.png" alt="Таблица 'Лидеры тематики' из Rush-Analytics" loading="lazy">
+                        <figcaption class="article-image__caption">Рис.1 — Лидеры тематики: Wildberries, Ozon, Exist, Autodoc доминируют в выдаче</figcaption>
+                    </figure>
+
+                    <p>Что мы видим: В выдаче доминируют маркетплейсы и крупные сетевые магазины: Wildberries, Ozon, Exist, Autodoc. Их видимость исчисляется тысячами запросов. Прямая конкуренция с ними по общим, высокочастотным запросам (например, «купить масло 5w30») потребовала бы бюджетов, несопоставимых с масштабом нашего сайта.</p>
+                    
+                    <p><strong>Вывод:</strong> Нам нужна оборонительная стратегия. Вместо лобовой атаки мы найдем и укрепимся в тех нишах, где маркетплейсы слабы — в узкоспециализированных, «экспертных» запросах.</p>
+
+                    <h2>2. Кластеризация:</h2>
+                    <p>Было собрано и обработано несколько десятков тысяч ключевых слов. С помощью кластеризации мы сгруппировали их по смыслу — по так называемому «интенту» пользователя.</p>
+
+                    <!-- СКРИНШОТ 2 -->
+                    <figure class="article-image">
+                        <img class="article-image__img" src="../img/cases/case-avtoall-semantics/2-cluster.png" alt="Общий вид таблицы-кластеризации в Rush-Analytics" loading="lazy">
+                        <figcaption class="article-image__caption">Рис.2 — Общий вид таблицы-кластеризации: каждая строка — поисковый запрос</figcaption>
+                    </figure>
+
+                    <p>Каждая строка в этой таблице — это поисковый запрос, а столбцы содержат критически важные для анализа данные:</p>
+                    <ul>
+                        <li><strong>Название кластера:</strong> Тематическая группа (например, «масло 5w30»).</li>
+                        <li><strong>Ключевое слово:</strong> Сам запрос.</li>
+                        <li><strong>Частотность:</strong> Сколько раз в месяц его ищут.</li>
+                        <li><strong>Совпадений ТОПа:</strong> Насколько запрос тематически близок к ядру кластера (чем выше число, тем увереннее мы можем использовать его на одной странице).</li>
+                    </ul>
+
+                    <h2>3. Анализ ключевых кластеров</h2>
+                    <p>Мы рассмотрим три разных кластера, чтобы показать, как анализ семантики влияет на стратегию.</p>
+
+                    <h3>Кейс 1. Высококонкурентный коммерческий кластер: «Масло 5w30»</h3>
+
+                    <!-- СКРИНШОТ 3 -->
+                    <figure class="article-image">
+                        <img class="article-image__img" src="../img/cases/case-avtoall-semantics/3-oil-5w30.png" alt="Кластер масло 5w30 с подсветкой коммерческих слов" loading="lazy">
+                        <figcaption class="article-image__caption">Рис.3 — Кластер «масло 5w30»: преобладают коммерческие запросы (купить, цена)</figcaption>
+                    </figure>
+
+                    <p>Что мы видим:</p>
+                    <ul>
+                        <li><strong>Размер кластера:</strong> 34 запроса. Это очень популярная тема.</li>
+                        <li><strong>Тип запросов:</strong> Преобладают слова «купить», «цена», «синтетика», «4л», «5л». Интент — коммерческий, человек хочет выбрать и купить товар.</li>
+                        <li><strong>Конкуренты:</strong> Top URL кластера — wildberries.ru и amag.ru. Это монстры рынка.</li>
+                    </ul>
+
+                    <p><strong>Стратегия:</strong> Пытаться вытеснить Wildberries по этому кластеру — гиблое дело. Мы используем его иначе:</p>
+                    <ul>
+                        <li>Создадим качественную страницу категории «Масла 5w30», удобную для пользователя.</li>
+                        <li>Наполним ее товарами с фильтрами по объему и типу, как того требуют запросы.</li>
+                        <li>Эта страница будет выполнять роль «воронки», принимая на себя трафик и распределяя его по более узким, нишевым позициям.</li>
+                    </ul>
+
+                    <h3>Кейс 2. Перспективная ниша: «Масло для редуктора ВАЗ»</h3>
+
+                    <!-- СКРИНШОТ 4 -->
+                    <figure class="article-image">
+                        <img class="article-image__img" src="../img/cases/case-avtoall-semantics/4-vaz-reducer.png" alt="Кластер масло для редуктора ваз" loading="lazy">
+                        <figcaption class="article-image__caption">Рис.4 — Кластер «масло для редуктора ваз»: конкретные запросы с моделью автомобиля</figcaption>
+                    </figure>
+
+                    <figure class="article-image">
+                        <img class="article-image__img" src="../img/cases/case-avtoall-semantics/5-url.png" alt="Кластер масло для редуктора ваз" loading="lazy">
+                        <figcaption class="article-image__caption">Рис.5 — URL-структура сайта auto.ru, блог/статья</figcaption>
+                    </figure>
+
+                    <p>Что мы видим:</p>
+                    <ul>
+                        <li><strong>Специфика:</strong> Запросы очень конкретные: «масло для редуктора ваз 2107», «масло для заднего моста».</li>
+                        <li><strong>Конкуренты:</strong> Top URL здесь — auto.ru (блог/статья), а не магазин. Это сигнал! Поисковик не находит качественной коммерческой страницы по этой теме и показывает информационную.</li>
+                    </ul>
+
+                    <p><strong>Стратегия:</strong> Это наша целевая ниша.</p>
+                    <ul>
+                        <li>Создаем страницу, посвященную маслам для редукторов всех моделей ВАЗ.</li>
+                        <li>Собираем все подходящие масла, делаем удобную таблицу совместимости, добавляем экспертные статьи по замене.</li>
+                        <li>Поисковая система, видя такую глубину проработки, с большой вероятностью предпочтет наш коммерческий, но экспертный сайт простой статье на auto.ru.</li>
+                    </ul>
+
+                    <h3>Кейс 3. Информационный кластер: «Присадки в масло — какие выбрать?»</h3>
+
+                    <!-- СКРИНШОТ 5 -->
+                    <figure class="article-image">
+                        <img class="article-image__img" src="../img/cases/case-avtoall-semantics/6-additives.png" alt="Кластер присадка в масло какие с вопросами и отзывами" loading="lazy">
+                        <figcaption class="article-image__caption">Рис.6 — Информационный кластер: вопросы, отзывы, сравнения</figcaption>
+                    </figure>
+
+                    <p>Что мы видим:</p>
+                    <ul>
+                        <li><strong>Интент:</strong> Пользователь еще не готов покупать, он ищет информацию, сравнивает, читает отзывы.</li>
+                    </ul>
+
+                    <p><strong>Стратегия:</strong> Такие запросы идеально подходят для контент-маркетинга.</p>
+                    <ul>
+                        <li>Создаем раздел «Блог» или «Советы».</li>
+                        <li>Пишем экспертную статью-рейтинг: «Топ-10 лучших присадок в масло: отзывы, цены, как выбрать».</li>
+                        <li>Внутри статьи ставим ссылки на соответствующие карточки товаров в каталоге.</li>
+                    </ul>
+                    
+                    <p>Так мы приводим пользователя на раннем этапе, формируем его лояльность и доверие («экспертность»), и мягко подводим к покупке.</p>
+
+                    <h2>4. Анализ реальных запросов сайта Avtoall.ru</h2>
+                    <p>Любой анализ был бы неполным без взгляда на то, что уже работает. Мы выгрузили запросы, по которым Avtoall.ru уже имеет видимость в поиске.</p>
+
+                    <!-- СКРИНШОТ 6 -->
+                    <figure class="article-image">
+                        <img class="article-image__img" src="../img/cases/case-avtoall-semantics/7-real-queries.png" alt="Реальные запросы Avtoall.ru" loading="lazy">
+                        <figcaption class="article-image__caption">Рис.7 — Реальные запросы сайта: узкие, экспертные, технические</figcaption>
+                    </figure>
+
+                    <p>Что мы видим: Сайт уже ранжируется по тысячам узких, экспертных запросов: «маслосъемные колпачки ямз 238», «маслофорсунки ваз 2112», «прокладка маслонасоса 2108». Это не случайные слова. Это портрет аудитории сайта — опытные автовладельцы и профессионалы, которые занимаются ремонтом, а не просто заменой масла.</p>
+
+                    <p><strong>Ключевой инсайт:</strong> Это и есть наше главное конкурентное преимущество. Маркетплейсы не смогут победить нас в этих микро-нишах, потому что их ассортимент и контент там слишком поверхностны.</p>
+
+                    <h2>5. От слов к цифрам: прогноз трафика</h2>
+                    <p>Мало собрать слова. Важно понимать, какую прибыль они принесут. На основе выделенных кластеров и частотности запросов был составлен прогноз трафика.</p>
+
+                    <!-- СКРИНШОТ 7 -->
+                    <figure class="article-image">
+                        <img class="article-image__img" src="../img/cases/case-avtoall-semantics/8-forecast.png" alt="Документ с прогнозом трафика" loading="lazy">
+                        <figcaption class="article-image__caption">Рис.8 — Прогноз трафика на основе семантического ядра</figcaption>
+                    </figure>
+
+                    <p><strong>Выводы из прогноза:</strong></p>
+                    <ul>
+                        <li>Фокусировка на низкоконкурентных нишах (маслосъемные колпачки, масла для конкретных двигателей, трансмиссионные масла для ВАЗ) позволит увеличить целевой трафик на 30-50% в течение полугода.</li>
+                        <li>Информационный блог на основе кластеров-вопросов обеспечит стабильный прирост посетителей на ранних стадиях цикла покупки.</li>
+                        <li>Основной прирост продаж будет идти не от «лобовых» ВЧ-запросов, а от глубокого проникновения в те ниши, где наш авторитет уже высок или может быть быстро построен.</li>
+                    </ul>
+
+                    <p>Полный текст прогноза доступен по ссылке: <a href="https://docs.google.com/document/d/141NpGExJvfCq89wxnPEgDQwNEfUXstC8QVJJ8jIjos0/edit?usp=sharing" target="_blank" rel="noopener">[ССЫЛКА НА ДОКУМЕНТ GOOGLE DOCS]</a></p>
+
+                    <p>Файл с собранным и кластеризованным семантическим ядром, для категории "Автомасла", доступен по ссылке: <a href="https://docs.google.com/spreadsheets/d/1-zoIaEr6acypj5IE55d7iu6ba1Sn9eXgapcXBKXaJRg/edit?usp=sharing" target="_blank" rel="noopener" style="color: var(--color-accent); font-weight: 600;">Google Таблица — Семантическое ядро Avtoall.ru</a></p>
+
+                    <h2>6. Итоги и ценность проделанной работы</h2>
+                    <ul>
+                        <li><strong>Готовая структура сайта:</strong> Мы получили четкое понимание, какие категории и подкатегории нужно создать (на основе крупных кластеров) и как организовать фильтры (на основе подсветок).</li>
+                        <li><strong>Контент-план:</strong> Информационные кластеры превратились в список тем для блога, которые будут привлекать «теплую» аудиторию.</li>
+                        <li><strong>Приоритизация:</strong> Мы разделили семантику на две группы: точки роста (низкоконкурентные ниши для фокуса) и фоновые запросы, по которым достаточно просто быть „в рынке“, не вкладываясь в агрессивное продвижение.</li>
+                        <li><strong>Измеримый результат:</strong> Прогноз трафика дает бизнесу понимание окупаемости SEO-работ и ставит конкретные KPI.</li>
+                    </ul>
+
+                    <p><strong>Главный вывод:</strong> Семантическое ядро — это не просто список слов. Это стратегический документ, который определяет развитие всего сайта. В условиях жесткой конкуренции выигрывает не тот, у кого больше бюджет, а тот, кто лучше понимает своего пользователя. Именно это понимание мы и заложили в основу продвижения Avtoall.ru.</p>
+
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="home/home.html">Главная</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="about/about.html">Обо мне</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="uslugi/uslugi.html">Услуги</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="../index.html">Кейсы</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="blog/blog.html">Блог</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="contacts/contacts.html">Контакты</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="otzyvy/otzyvy.html">Отзывы</a></li>
+                </ul>
+            </nav>
+            <div class="footer__copyright">
+                &copy; <span id="current-year">2024</span> VKobtsev SEO
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

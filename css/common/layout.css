@@ -1,0 +1,7 @@
+/* Сетка для карточек кейсов - используем CSS Grid */
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 40px 0;
+}

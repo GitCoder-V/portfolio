@@ -1,0 +1,9 @@
+@import url('common/base.css');
+@import url('common/layout.css');
+@import url('blocks/smart-header.css');
+@import url('blocks/case-card.css');
+@import url('blocks/footer.css');
+@import url('blocks/breadcrumbs.css');
+@import url('blocks/article-content.css');
+@import url('blocks/code-highlight.css');
+@import url('blocks/header.css'); /* этот файл должен быть последним */
