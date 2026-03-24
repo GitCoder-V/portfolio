@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Карта сайта
+Sitemap: https://gitcoder-v.github.io/portfolio/sitemap.xml
+
+# Хост (для Яндекса)
+Host: https://gitcoder-v.github.io/portfolio
